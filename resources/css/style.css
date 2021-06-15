@@ -1,0 +1,421 @@
+/* Orange : #67e22 */
+/*  --------------------------------------------------------------------------
+                                    BASIC SETUP
+
+--------------------------------------------------------------------------*/
+
+*{
+    /* margin: 0; */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: white;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+.hero-text-box{
+    position: absolute;
+    top: 40%; 
+    left: 10%; 
+    /* transform: translate(-50%,-50%); */
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+}
+
+/*  --------------------------------------------------------------------------
+                                    REUSABLE COMPONENT
+
+--------------------------------------------------------------------------*/
+
+
+
+h1,
+h2,
+h3{
+    font-weight: 300;
+    text-transform: uppercase;
+   
+}
+
+h1{
+    margin-top:0;
+    margin-bottom: 20px;
+    color:rgba(223, 217, 217, 0.9);
+    font-size: 240%;
+    margin-bottom: 20px;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center ;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+}
+
+h2:after{
+    display: block;
+    height: 2px;
+    width: 100px;
+    content:"";
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: #e67e22;
+}
+
+h3{
+    font-weight: 110%;
+    margin-bottom: 15px;
+}
+/* --------------- PARAGRAPH------------------------------- */
+.long-copy{
+    line-height: 145%;
+    width:70%;
+    margin-left:15%
+}
+
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+}
+
+/* --------------- ICON------------------------------- */
+
+.icon-big{
+    font-size: 350%;
+    display: block;
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+
+.icon-small{
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color:#e67e22;
+    font-size: 120%;
+    margin-right: 10px;
+
+    /* align icon & text */
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -6px
+}
+
+
+/* --------------- BUTTON ------------------------------- */
+
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration:none;
+    border-radius: 200px;
+    color: #fff;
+    transition: background-color 0.2s,
+    border 0.2s,
+    color 0.2s;
+}
+
+.btn:hover,
+.btn:active{
+    background-color: #d35400;
+} 
+
+
+/* Normal BTN */
+.btn-full:link,
+.btn-full:visited{
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    border: 1px solid #d35400;
+    color: #d35400;
+}
+
+/* HOVER & ACTIVE */
+
+.btn-full:hover,
+.btn-full:active{
+    background-color: #d35400; 
+
+ }
+
+.btn-ghost:hover,
+.btn-ghost:active{
+    border: 1px solid #d35400;
+    color: #fff
+}
+
+
+.box{
+    padding: 1%;
+}
+/*  --------------------------------------------------------------------------
+                                HEADER
+
+--------------------------------------------------------------------------*/
+
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)), url('img/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.row{
+    
+    /* biar semua ketengah */
+    /* display: flex; */
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    /* position: absolute; */
+    top: 40%; 
+    left: 10%; 
+}
+
+.logo{
+    height: 100px;
+    /* width: auto; */
+    margin-top: 20px;
+    position: absolute;
+    left: 10%;  
+}
+
+.main-nav{
+    list-style: none;
+    display: -webkit-flex;
+    margin-left: 80vh;
+    margin-top:50px ;
+}
+
+.main-nav li{
+    align-items: flex-end;
+   
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 90%;
+    border-bottom: 2px transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    color:  #d35400;
+    border-bottom: 2px solid;
+}
+
+
+
+/* _________________________________________________________
+
+                            SECTION FEATURES
+
+_________________________________________________________________*/ 
+.section-features{
+    margin: 50px auto;
+    max-width: 1140px;
+}
+
+.section-features .long-copy{
+    margin-bottom: 20px;
+}
+
+
+.section-testimonials{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.295),rgba(0,0,0,0.7)), url('/resources/img/back-customers.jpg');
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+    padding: 80px;
+    box-sizing: border-box;
+}
+
+
+/* _________________________________________________________
+
+                            MEAL
+
+_________________________________________________________________*/ 
+
+.section-meals{
+    padding: 0;
+}
+
+.meal-showcase{
+    list-style: none;
+    width: 100%;
+}
+
+.meal-showcase li{
+    display: block;
+    float: left;
+    width: 25%;
+    overflow: hidden;
+}
+
+.meal-photo{
+    width: 100%;
+    margin: 0;
+    transform: scale(1.15);
+    background-color: black;
+}
+
+.meal-photo img:hover{
+    transform: scale(1.03);
+    transition: transform 0.5s, opacity 0.5s;
+    opacity: 1;
+}
+
+.meal-photo img{
+    opacity: 0.7; 
+    width: 100%;
+}
+
+
+/* _________________________________________________________
+
+                           HOW IT WORKS
+
+_________________________________________________________________*/ 
+
+
+.section-steps{
+    padding-top: 40%;
+    background-color: #f4f4f4;
+}
+.steps-box:first-child{
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+.steps-box:last-child{
+    padding-right: 3%;
+    margin-top: 70px;
+}
+
+.app-screen{
+    width: 40%;
+}
+
+.work-step{
+    margin-bottom: 50px;
+
+    display: flex;
+    flex-direction: row
+}
+
+.work-step:last-of-type{
+    margin-bottom: 80px;
+
+}
+
+.work-step div{
+    color: #e67e22;
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 55px;
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    /* display: block; */
+    /* float: left; */
+    font-size: 150%;
+    margin-right: 25px;
+}
+
+.btn-app img{
+    height: 50px;
+    width: auto;
+    margin-right: 10px
+}
+
+
+
+/* _________________________________________________________
+
+                            CITY
+
+_________________________________________________________________*/ 
+
+
+.section-cities{
+    margin: 50px auto;
+    max-width: 1140px;
+}
+
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.city-features{
+    margin-bottom: 5px;
+}
+
+/* _________________________________________________________
+
+                            TESTIMONIAL
+
+_________________________________________________________________*/ 
+
+
+blockquote{
+    font-style: italic;
+    line-height: 145%;
+    margin-bottom: 20px;
+    padding: 20px;
+    /* ini parents */
+    position: relative;
+    margin-top: 40px;
+}
+
+cite{
+    font-size: 95%;
+    margin-top: 25px;
+    display: block;
+}
+
+blockquote:before{
+    content: '\201C';
+    font-size: 500%;
+    display: block;
+    /* pastikan parent memilikiposisi relative */
+    position: absolute;
+    top: 5px;
+    left:0
+}
+
+cite img{
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 10%;
+    vertical-align: middle;
+}

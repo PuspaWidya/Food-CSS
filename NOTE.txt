@@ -1,0 +1,13 @@
+text-rendering: optimizeLegibility;
+
+btn:active{
+    
+}
+link : element look at normal state
+visited: element look after visited
+hover : when mouse hovering
+active : when clicked
+
+
+PR:
+BIKIN NAV YANG BISA LOGO KIRI, KANANNYA TULISAN
